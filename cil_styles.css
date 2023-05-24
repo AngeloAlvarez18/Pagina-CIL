@@ -1,3 +1,9 @@
+.body_index {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 #titulo_cil{
     color: #428bca; 
     display: flex;
@@ -5,9 +11,9 @@
     align-items: center;  
     font-family: "Arial Rounded MT", sans-serif;
     text-decoration: none;    
-    font-size: 30px;
-    height: 50px;
-    width: 500px;
+    font-size: 180%;
+    height: 65%;
+    width: 35%;
 }
 
 #titulo{
@@ -32,11 +38,14 @@
 
 .tabla_contenido{
     float: left;
-    height: 478px;
-    width: 200px;
+    width: 16%;
     background-color: #428bca;
     border: 2px solid white;
     margin-top: 2px;
+}
+
+.tabla_contenido div {
+    font-size: 80%;
 }
 
 .tabla_contenido a{
@@ -44,12 +53,25 @@
     color: rgb(12, 9, 44);
 }
 
-.cuerpo_pagina_cil {
-    width: 1117px;
-    height: 482px;
-    background-color: white;
+.cuerpo_pagina_cil{
+    border: 5px solid #00264D;
+    background-color: #428bca;
+    width: 82.8%;
+    height: 823px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+.cuerpo_pagina_cil header{
     display: flex;
-    border: 5px solid #428bca;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+}
+
+.cuerpo_pagina_cil div{
+    margin-left: 5px;
 }
 
 .encabezado_elemento {
@@ -61,6 +83,15 @@
     align-items: left;
     position: relative;
     border: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.encabezado_elemento:hover {
+    background-color: #00264D;
+}
+
+#siat:hover {
+    background-color: #00264D;
 }
 
 .encabezado {
@@ -85,3 +116,6 @@
     position: relative;
 }
 
+.footer_cil {
+    margin-top: auto;
+}
