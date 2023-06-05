@@ -55,7 +55,7 @@
 
 .cuerpo_pagina_cil{
     border: 5px solid #00264D;
-    background-color: #428bca;
+    background-color: white;
     width: 82.8%;
     height: 823px;
     float: right;
@@ -63,14 +63,25 @@
     margin-top: 2px;
 }
 
-.cuerpo_pagina_cil header{
+.cuerpo_pagina_cil h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 180%;
+    color: rgb(12, 9, 44);
 }
 
-.cuerpo_pagina_cil div{
+.cuerpo_pagina_cil a{
+    text-decoration: none;
+    color: #428bca;
+}
+
+.cuerpo_pagina_cil h3{
+    margin-left: 5px;
+}
+
+.cuerpo_pagina_cil li{
+    list-style-type: none;
     margin-left: 5px;
 }
 
