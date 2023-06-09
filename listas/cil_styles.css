@@ -83,7 +83,7 @@
 
 .cuerpo_pagina_cil li{
     list-style-type: none;
-    margin-left: 5px;
+    line-height: 130%;
 }
 
 .encabezado_elemento {

@@ -55,46 +55,14 @@
     color: rgb(12, 9, 44);
 }
 
-.cuerpo_pagina_cil{
-    overflow: auto;
-    border: 5px solid #00264D;
-    background-color: white;
-    width: 80%;
-    height: 120%;
-    margin-top: 2px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-
 .cuerpo_pagina_cil h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 180%;
-    color: #428bca;
+    color: rgb(12, 9, 44);
 }
 
-.cuerpo_pagina_cil h2{
-    margin-left: 0.5%;
-    color: #428bca;
-}
-
-.cuerpo_pagina_cil a{
-    text-decoration: none;
-    color: #428bca;
-}
-
-.cuerpo_pagina_cil h4{
-    margin-left: 0.5%;
-}
-
-.cuerpo_pagina_cil p {
-    margin-left: 0.5%;
-}
-
-.cuerpo_pagina_cil li{
-    line-height: 140%;
-}
 
 .encabezado_elemento {
     height: 30px;
@@ -150,25 +118,25 @@
     float: right;
 }
 
-#contenidos {
-    border: 1px solid grey;
-    margin-left: 5px;
-    margin-right: 5px;
+.cuerpo_pagina_cil{
+    overflow: auto;
+    border: 5px solid #00264D;
+    background-color: white;
+    width: 80%;
+    height: 120%;
+    margin-top: 2px;
 }
 
-#contenidos header{
-    border: 1px solid grey;
-    margin-bottom: 10px;
-    height: 30px;
-    background-color: #cccccc;
-
-}
-
-#contenidos li {
-    list-style-type: inside;
-    line-height: 140%;
-}
-
-#contenidos a{
+.cuerpo_pagina_cil h1{
     color: #428bca;
 }
+
+#blank_div {
+    height: 400px;
+    margin-left: 0.5%;
+}
+
+#blank_div h4 {
+    margin-left: 0.5%;
+}
+
