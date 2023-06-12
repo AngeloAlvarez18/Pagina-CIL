@@ -173,10 +173,19 @@
     color: #428bca;
 }
 
-#importante b{
+.importante b{
     background-color: rgb(255, 204, 153);
 }
 
-#importante span{
+.importante span{
     background-color: rgb(255, 204, 153);
+}
+
+#tabla {
+    border: 1px solid grey;
+    margin-left: 0.5%;
+}
+
+#tabla td{
+    border: 1px solid grey;
 }

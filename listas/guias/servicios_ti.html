@@ -22,10 +22,10 @@
                 <div class="encabezado">Subsecretaria de Economia</div>
 
                 <div class="encabezado_elemento">
-                    <a href="cil.html">C.I.L Hacienda</a>
+                    <a href="../cil.html">C.I.L Hacienda</a>
                 </div>
                 <div class="encabezado_elemento">
-                    <a href="../listas/direccion_catastro.html">Dirección de Catastro</a>
+                    <a href="../../listas/direccion_catastro.html">Dirección de Catastro</a>
                 </div>
                 <div class="encabezado_elemento">Gestión de Recursos</div>
                 <div class="encabezado_elemento">Procuradores Municipales</div>
@@ -165,7 +165,7 @@
                     <p>Todos los servicios requieren la aprobación del superior del usuario que solicita. 
                         El superior se determina en función de la dependencia del usuario solicitante. 
                     </p>
-                    <p id="importante"><b>Importante: </b><span>Chequear al loguearse que la dependencia sea la correcta.</span> </p>
+                    <p class="importante"><b>Importante: </b><span>Chequear al loguearse que la dependencia sea la correcta.</span> </p>
                     <p>
                         Los servicios de acceso a: Sistemas, Servidor de Archivo 
                         y Cuenta Institucional requieren además la autorización del 
@@ -181,71 +181,117 @@
                     <table id="tabla">
                         <tr>
                             <td>
-                               <b>Servicio</b> 
+                               <b><pre>Servicio   </pre></b> 
                             </td>
                             <td>
-                                <b>Superior</b>
+                                <b><pre>Superior   </pre></b>
                             </td>
                             <td>
-                                <b>Propietario</b>
+                                <b><pre>Propietario   </pre></b>
                             </td>
                             <td>
-                                <b>Seguridad</b>
+                                <b><pre>Seguridad   </pre></b>
                             </td>
                             <td>
-                                <b>Administrador</b>
+                                <b><pre>Administrador   </pre></b>
                             </td>
                             <td>
-                                <b>CIL</b>
+                                <b><pre>CIL     </pre></b>
                             </td>
                         </tr>
                         <tr>
                             <td>Sistema</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
+                            <td><pre>      x   </pre></td>
+                            <td><pre>     x   </pre></td>
+                            <td><pre>      x   </pre></td>
+                            <td><pre>   x   </pre></td>
                         </tr>
                         <tr>
                             <td>Internet</td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>   x   </pre></td>
                         </tr>
                         <tr>
                             <td>Correo Electrónico</td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>   x   </pre></td>
                         </tr>
                         <tr>
                             <td>Usuario Munix</td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>     x   </pre></td>
                             <td></td>
-                            <td>x</td>
+                            <td><pre>   x  </pre></td>
                         </tr>
                     </table>
 
-                    <h2 id="ingreso_solicitud">¿Cómo ingreso una solicitud de acceso?</h2>
+                    <ul>
+                        <li><u>Superior</u>: Aprueba el pedido de acceso.</li>
+                        <li><u>Propietario</u>: Autoriza el acceso al servicio solicitado.</li>
+                        <li><u>Seguridad</u>: Crea el usuario para el sistema/ servicio y otorga permisos necesarios.</li>
+                        <li><u>Administrador</u>: Configura el sistema para el usuario.</li>
+                        <li><u>CIL</u>: Informa al usuario y chequea que el acceso funcione correctamente.</li>
+                    </ul>
 
+                    <h2 id="ingreso_solicitud">¿Cómo ingreso una solicitud de acceso?</h2>
+                    <p>Una vez que el usuario se registró al sistema:</p>
+
+                    <ul>
+                        <li>Seleccionar opción Solicitar acceso</li>
+                        <li>Ingresar DNI y hacer clic en Buscar</li>
+                        <li>Completar dependencia y CIL y hacer clic en Siguiente. 
+                            Esto es MUY IMPORTANTE ya que en función de la dependencia 
+                            seleccionado el sistema determina quién aprobará la solicitud.</li>
+                        <li>Seleccionar Operación (alta, baja o modificación) 
+                            y el servicio y hacer clic en Agregar.</li>
+                        <li>Completar los datos que requiere el sistema según el servicio solicitado.</li>
+                        <li class="importante"><b>Importante: </b><span>Indicar en campo comentario el 
+                            número de interno de la persona que está haciendo la solicitud</span> </li>
+                    </ul>
+                
                     <h2 id="clasificar_soporte">¿Cómo clasificar una solicitud de soporte?</h2>
+                    <p>Ver <a href="https://www.rosario.gob.ar/mr/redinternadgi/sistemas-y-portales/acceso-a-servicios-ti/guia-servicios">
+                        https://ssl.rosario.gov.ar/mr/redinternadgi/servicios-ti/acceso-a-servicios-ti/guia-servicios</a></p>
 
                     <h2 id="estado_solicitud">¿Cómo conocer el estado de una solicitud de acceso?</h2>
+                    <ul>
+                        <li>Ingresar al sistema y seleccionar la opción Consultar Solicitudes</li>
+                        <li>Completar algún criterio de búsqueda</li>
+                        <li>Ingresar al detalle la solicitud para ver estado y demás información:</li>
+                        <img src="../../images/ampliar_info_sistema.jpg" alt="inf_sistema">
+                    </ul>
 
                     <h2 id="informa_usuario">¿Quién informa al usuario cuando puede acceder al servicio solicitado?</h2>
+                    <p>El CIL informará al usuario cuando la solicitud ha sido finalizada y la forma de acceder al servicio.</p>
 
                     <h2 id="aprobacion_solicitud">¿Cómo se aprueba/ autoriza una solicitud de acceso?</h2>
+                    <p>Los superiores y propietarios cuando ingresan al sistema y seleccionan la opción 
+                        Resolver solicitud visualizarán todos los pedidos de accesos 
+                        pendientes de aprobación/ autorización como se muestra a continuación:</p>
+                    <img src="../../images/autorizacion_aprobacion.jpg" alt="aut_aprob">
 
-                    <h2></h2>
+                    <ul>
+                        <li>Para aprobar una solicitud el superior debe hacer clic 
+                            en el ícono de la herramienta y seleccionar el estado final 
+                            "Solicitud aprobada". En caso contrario "Solicitud rechazada". 
+                            En ambos casos opcionalmente puede completar con algún 
+                            comentario en el campo observaciones.</li>
+                        <li>Para autorizar una solicitud el propietario el 
+                            procedimiento es el mismo salvo que el estado final 
+                            que debe seleccionar es: "Acceso Autorizado".</li>
+                    </ul>
+                    <p>Hacer clic en el botón "Aceptar" para guardar los cambios.</p>
                 </div>
-
+                
+                <br><br><br><br>
                 <footer id="footer_cuerpo">
                     Centro Informatico Local Hacienda cilhacienda@rosario.gov.ar Telefono 4802900 int 161 pb. ofic.007
                     <img src="../../images/logo_muni.gif" alt="logo_muni">
