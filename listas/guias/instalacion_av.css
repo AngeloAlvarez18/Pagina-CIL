@@ -152,25 +152,4 @@
 
 /* Hasta aca son los estilos iguales en todos los css de guias */
 
-#contenidos {
-    border: 1px solid grey;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
-#contenidos header{
-    border: 1px solid grey;
-    margin-bottom: 10px;
-    height: 30px;
-    background-color: #cccccc;
-
-}
-
-#contenidos li {
-    list-style-type: inside;
-    line-height: 140%;
-}
-
-#contenidos a{
-    color: #428bca;
-}

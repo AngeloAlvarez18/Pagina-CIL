@@ -150,6 +150,8 @@
     float: right;
 }
 
+/* Hasta aca son los estilos iguales en todos los css de guias */
+
 #contenidos {
     border: 1px solid grey;
     margin-left: 5px;

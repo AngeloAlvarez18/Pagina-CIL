@@ -118,6 +118,8 @@
     float: right;
 }
 
+/* Hasta aca son los estilos iguales en todos los css de guias */
+
 .cuerpo_pagina_cil{
     overflow: auto;
     border: 5px solid #00264D;
