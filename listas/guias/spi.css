@@ -1,0 +1,142 @@
+.body_index {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo_cil{
+    color: #428bca; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-family: "Arial Rounded MT", sans-serif;
+    text-decoration: none;    
+    font-size: 180%;
+    height: 65%;
+    width: 35%;
+}
+
+#titulo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    border: 5px solid #428bca;
+}
+
+#titulo img{
+    width: 59px;
+    height: 70px;
+    object-fit: cover;
+}
+
+#header_cil {
+    border: 2px solid white;
+    width: 97%;
+}
+
+.tabla_contenido{
+    overflow: auto;
+    float: left;
+    width: 16%;
+    background-color: #428bca;
+    border: 2px solid white;
+    margin-top: 2px;
+}
+
+.tabla_contenido div {
+    font-size: 80%;
+}
+
+.tabla_contenido a{
+    text-decoration: none;
+    color: rgb(12, 9, 44);
+}
+
+.cuerpo_pagina_cil h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+    color: rgb(12, 9, 44);
+}
+
+
+.encabezado_elemento {
+    height: 30px;
+    padding-left: 5px;
+    color: rgb(12, 9, 44);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.encabezado_elemento:hover {
+    background-color: #00264D;
+}
+
+#siat:hover {
+    background-color: #00264D;
+}
+
+.encabezado {
+    background-color: #00264D;
+    color: rgb(147, 180, 196);
+    height: 30px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    border: 1px solid black;
+}
+
+#siat{
+    height: 60px;
+    border: 1px solid black;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+}
+
+.footer_cil {
+    margin-top: auto;
+}
+
+#footer_cuerpo{
+    text-align: center;
+}
+
+#footer_cuerpo img{
+    float: right;
+}
+
+.cuerpo_pagina_cil{
+    overflow: auto;
+    border: 5px solid #00264D;
+    background-color: white;
+    width: 80%;
+    height: 120%;
+    margin-top: 2px;
+}
+
+.cuerpo_pagina_cil h1{
+    color: #428bca;
+}
+
+#blank_div {
+    height: 400px;
+    margin-left: 0.5%;
+}
+
+#blank_div h4 {
+    margin-left: 0.5%;
+}
+
