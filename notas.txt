@@ -1,0 +1,9 @@
+En caso de que ingrese nuevo personal, y se quiere modificar los nombres de integrantes en la pagina,
+en la parte de C.I.L hacienda, dirigirse a lista/cil.html, una vez dentro del archivo html ir a la parte
+<div>
+                    <h3>Integrantes:</h3>
+                    <h3>Arnaldo Zarate</h3>
+                    <h3>Juan Manuel Botto</h3>
+                    <h3>Ángelo Álvarez</h3>
+</div>
+Y modificamos los nombres, o eliminamos todo el renglon del integrante.
