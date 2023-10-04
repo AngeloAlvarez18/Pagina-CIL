@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Municipal De Rosario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" href="https://munix-admin.pm.rosario.gov.ar/favicon.png" type="image/png">
+        <link rel="stylesheet" href="spi_kubuntu.css" type="text/css">
+    </head>
+
+    <body class="body_index">
+        <header id="header_cil">
+            <div id="titulo">
+                <a href="../../index.html" id="titulo_cil">
+                    <img src="../../images/muni_img.png" alt="Escudo Rosario">
+                    C.I.L HACIENDA (ADUANA)
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="tabla_contenido">
+                <div class="encabezado">Subsecretaria de Economia</div>
+
+                <div class="encabezado_elemento">
+                    <a href="../cil.html">C.I.L Hacienda</a>
+                </div>
+                <div class="encabezado_elemento">
+                    <a href="../direccion_catastro.html">Dirección de Catastro</a>
+                </div>
+                <div class="encabezado_elemento">Gestión de Recursos</div>
+                <div class="encabezado_elemento">Procuradores Municipales</div>
+                <div class="encabezado_elemento">Legal Tributaria</div>
+                <div class="encabezado_elemento">CIL-Hacienda</div>
+                <div class="encabezado">Enlaces importantes</div>
+                <div class="encabezado_elemento">Correo webmail MR</div>
+                <div class="encabezado_elemento">Nomina de escribano</div>
+                <div class="encabezado_elemento">Cups Munix II</div>
+                <div class="encabezado_elemento">Administracion Munix III</div>
+                <div class="encabezado_elemento">Clientes conectados en Munix III</div> 
+                <div class="encabezado_elemento">Nueva plataforma soporte 1ero y 2do nivel</div> 
+                <div class="encabezado_elemento">Clave Unificada</div> 
+                <div class="encabezado_elemento">Servicios TI</div> 
+                <div class="encabezado_elemento">Cuota de Correo</div> 
+                <div class="encabezado_elemento">Telefonos</div> 
+                <div class="encabezado_elemento">Telefonos utiles</div> 
+                <div class="encabezado_elemento">Internos Informaticas</div> 
+                <div class="encabezado_elemento">Telefonos</div> 
+                <div class="encabezado_elemento">Sistema De Notas</div> 
+                <div class="encabezado_elemento">Informatica</div> 
+                <div class="encabezado_elemento">Convocatoria pasantias</div> 
+                <div class="encabezado">Inventario CIL</div>
+                <div class="encabezado_elemento">Sistema inventario</div>                
+            </div>
+            
+            <div class="cuerpo_pagina_cil">
+                <h2>Guía de configuración post-instalacion de Kubuntu</h2>
+                <h3>Introducción:</h3>
+
+                <p>Una vez que hayamos terminado de instalar el sistema operativo kubuntu, necesitaremos
+                    configurar el sistema, para que éste tenga todo lo necesario para que cualquier empleado
+                    municipal pueda utilizarlo. El sistema operativo, el cual esta basado en la distribución 
+                    de linux Ubuntu, cuenta con un archivo, sources.list, el cual se encuentra en /etc/apt/sources.list
+                    en el cual se encuentran los direccionamientos a los repositorios a los cuales el SO acude
+                    cuando necesita actualizarse o descargar alguna aplicación.
+                </p>
+
+                
+                <h3 id="actualizar">Actualizar sistema</h3>
+                <p>Para actualizar nuestra sistema deberemos abrir la consola, y tipear los siguientes 
+                    comandos:
+                </p>
+                <h4>Descargar actualizaciones:</h4>
+                <pre class="codigo">sudo apt-get update</pre>
+                <p>Con este comando descargaremos las actualizaciones del sistema, las cuales se descargaran
+                    de los repositorios mencionados anteriormente.
+                </p>
+                <p>En caso que salga un error que no tengamos permisos de usuario, deberemos hacerlo como
+                    usuario administrador, esto lo haremos con el siguiente comando.
+                </p>
+                <pre class="codigo">su nombre_usuario_admin</pre>
+                <p>Generalmente, el nombre de usuario administrador es cil, en caso de que no exista, 
+                    podemos entrar como usuario root, o sea, el nombre de usuario será root.
+                Una vez hayamos entrado como usuario administrador, ahora si podremos tipear el
+                comando mencionado anteriormente.                
+                <p>Una vez descargadas las actualizaciones, deberemos instalarlas. Lo hacemos con el
+                siguiente comando:
+                </p>
+                <h4>Instalar actualizaciones:</h4>
+                <pre class="codigo">sudo apt-get update</pre>
+                <p>Una vez hayamos hecho esto, tendremos nuestro sistema actualizado.</p>
+
+                <h3>Error común</h3>
+                <p>Puede pasar que al intentar hacer los pasos anterior para actualizar el sistema, al momento
+                    de descargar las actualizaciones nos salga un error, de que no se encontraron los repositorios
+                    a los cuales apunta nuestro archivo sources.list, el cual mencionamos al principio.
+                    Para hacer esto, deberemos modificar este archivo.
+                    Nuevamente, abrimos la consola y nos dirijimos a la siguiente ubicacion:
+                </p>
+                <h4>Moverse al directorio del archivo:</h4>
+                <pre class="codigo">sudo cd /etc/apt</pre>
+                <p>Nos crearemos un archivo de backup de nuestro archivo sources.list, en caso de que 
+                    hagamos algo mal.
+                </p>
+
+                <h4>Crear backup:</h4>
+                <pre class="codigo">sudo cp sources.list sources_backup.list</pre>
+
+                <p>Antes de modificar el archivo, necesitamos saber la versión de nuestro
+                    sistema operativo, lo haremos con el siguiente comando.
+                </p>
+                <h4>Consultar versión del SO:</h4>
+                <pre class="codigo">lsb_release -a</pre>
+                
+                <p>Generalmente, tendremos la versión 18.04. En caso que tengamos esta versión,
+                    la siguiente plantilla funciona para nuestro archivo sources.list.
+                </p>
+
+                <h4>Plantilla de sources.list kubuntu 18.04</h4>
+                <pre class="codigo"># See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://us.archive.ubuntu.com/ubuntu/ bionic universe
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic universe
+deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
+## team, and may not be under a free licence. Please satisfy yourself as to 
+## your rights to use the software. Also, please note that software in 
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://us.archive.ubuntu.com/ubuntu/ bionic multiverse
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+# deb http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu bionic partner
+# deb-src http://archive.canonical.com/ubuntu bionic partner
+
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu bionic-security universe
+# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+                </pre>
+                <p>En caso que no tengamos esta versión, deberemos buscar una plantilla para la versión 
+                    correspondiente, tendremos que googlear. Generalmente aparece como
+                    sources.list ubuntu (version del sistema) plantilla.
+                </p>
+
+                <p>Para modificar el archivo sources.list, debemos tipear los siguientes comandos</p>
+                <h4>Abrir archivo con editor de texto:</h4>
+                <pre class="codigo">sudo nano /apt/etc/sources.list</pre>
+                <p>Borramos todo lo que tenga el archivo, y pegamos nuestra plantilla.
+                    Luego guardamos el archivo.
+                </p>
+                <p>Ahora, con esto, se deberia arreglar el error que teníamos, y podremos
+                    ahora si, seguir los pasos que hicimos anteriormente y
+                    <a href="#actualizar">actualizar</a> el sistema.
+                </p>
+
+               
+                <br><br><br><br>
+
+                <footer id="footer_cuerpo">
+                    Centro Informatico Local Hacienda cilhacienda@rosario.gov.ar Telefono 4802900 int 161 pb. ofic.007
+                    <img src="../../images/logo_muni.gif" alt="logo_muni">
+                </footer>
+            </div>
+        </main>
+
+    </body>
+</html>
